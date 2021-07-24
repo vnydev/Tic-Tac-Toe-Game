@@ -52,7 +52,6 @@ const Tictactoe: React.FC = () => {
     })
    }
     const playStep = (rowId: number, colId: number, value: boolean) => {
-        console.log("playstep", {rowId, colId, value});
         const evenOrOdd = date.getSeconds() % 2;
         
         if (!firstPlayStartPoistion && !isPlayStarted) {
@@ -77,11 +76,9 @@ const Tictactoe: React.FC = () => {
 
         gameStage[colId] = currentPlayPosition === 'p1' ? firstPlayStartPoistion : secondPlayStartPoistion;
         setGameStage({...gameStage});
-        console.log("gameStage", gameStage)
     }
 
     useEffect(() => {
-        console.log('game stage', {gameStage, currentPlayPosition, previousPlayPosition})
     }, [gameStage, currentPlayPosition, previousPlayPosition])
 
     return <div className={classes.mainContainer}>
