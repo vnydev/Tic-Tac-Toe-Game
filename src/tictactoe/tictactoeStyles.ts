@@ -15,16 +15,23 @@ const useClasses = makeStyles((themes: Theme) => createStyles({
         top: '40%',
         'z-index': '1000',
         position: 'absolute',
+        color: '#fff',
     },
     rowCol1: {
+        width: '46px',
+        height: '46px',
         border: '1px solid #ccc',
         cursor: 'pointer',
     },
     rowCol2: {
+        width: '46px',
+        height: '46px',
         border: '1px solid #ccc',
         cursor: 'pointer',
     },
     rowCol3: {
+        width: '46px',
+        height: '46px',
         border: '1px solid #ccc',
         cursor: 'pointer',
     }
